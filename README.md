@@ -23,9 +23,32 @@ The project structure is as follows:
 - **Tabular Classifier**: Tabular Data Training 
 - **MoE Transformer**: MoE Transformer
 - **GRPO**: GRPO
- 
 
-## Installation
+## Installation with PIP
+To install the TabularGRPO with pip, follow these steps: 
+1. Install the required package:
+    ```bash
+    pip install tabulargrpo==0.1.3
+    ```
+
+## Usage
+2. To use the TabularGRPO train, run the following command:
+```bash
+        from tabulargrpo import TabularGRPOClassifier
+        from tabulargrpo.models import MoETransformer 
+        from sklearn.datasets import make_classification
+        from sklearn.model_selection import train_test_split
+        
+        X, y = make_classification(n_samples=5000, n_features=14, n_classes=2, random_state=42)
+ 
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        
+        classifier = TabularGRPOClassifier(model_class=MoETransformer,input_dim=14, num_classes=2, epochs=10,group_size=10)
+        classifier.fit(X_train,y_train)
+```
+3. That is it 
+
+## Installation with project
 To install the TabularGRPO project, follow these steps:
 
 1. Clone the repository:
