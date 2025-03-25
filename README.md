@@ -13,7 +13,6 @@ The project structure is as follows:
 - `tabulargrpo`: Root directory
 	- `README.md`: the reamde
 	- `data`: Data directory
-		- `dataset.py`: Training Testing data preperations
 		- `synthetic_data_small.csv`: Download dataset and drop here
 	- `models`: Model directory
 		- `MoETransformer.py`: MoETransformer model	 
