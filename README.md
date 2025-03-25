@@ -92,6 +92,11 @@ To use the TabularGRPO predict, run the following command:
         p = classifier.predict(data)
         print(p)
 ```
+
+To use the TabularGRPO demo, run the following command:
+```bash
+        python demo.py
+```
  
 
 ## Contributing
