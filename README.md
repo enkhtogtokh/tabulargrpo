@@ -1,4 +1,6 @@
 # TabularGRPO
+TabularGRPO: Modern Mixture-Of-Experts Transformer with Group Relative Policy Optimization GRPO for Tabular Data Learning
+https://www.qeios.com/read/A9Q3VC/pdf
 
 ## Overview
 TabularGRPO 
